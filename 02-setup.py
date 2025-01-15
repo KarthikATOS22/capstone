@@ -5,9 +5,9 @@
 
 class SetupHelper():   
     def __init__(self, env):
-        Conf = Config()
-        self.landing_zone = Conf.base_dir_data + "/raw"
-        self.checkpoint_base = Conf.base_dir_checkpoint + "/checkpoints"        
+        Conf = Config()      
+        self.landing_zone = Conf.base_dir + "/data_zone"        
+        self.checkpoint_base = Conf.base_dir + "/checkpoint_zone"        
         self.catalog = env
         self.db_name = Conf.db_name
         self.initialized = False
